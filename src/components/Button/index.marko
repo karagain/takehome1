@@ -1,0 +1,12 @@
+$ const { label } = input;
+
+<button class=input.class>
+  <span>
+    <if(label)>
+      ${label}
+    </if>
+    <else>
+      <${input.renderBody}/>
+    </else>
+  </span>
+</button>

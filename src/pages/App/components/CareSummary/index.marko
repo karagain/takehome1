@@ -1,0 +1,39 @@
+import randLogo from "../../../../assets/images/randLogo.svg";
+$ const texts = [
+  {
+    logo: randLogo,
+    title: "Affordable Protection Plans",
+    subtitle: "Save up to 50% when you buy online from Allstate",
+  },
+  {
+    logo: randLogo,
+    title: "100% of covered repair costs",
+    subtitle:
+      "Covers everything from your steering and transmission, down to the fancy tech inside your touchscreen. All you pay is a $50 deductible.",
+  },
+  {
+    logo: randLogo,
+    title: "Repair Anywhere",
+    subtitle:
+      "You choose your mechanic, and we pay the directly for repairs, so you aren't stuck chasing down reimbursements",
+  },
+];
+
+<div class="flex flex-col">
+  <div class="bg-blue py-4 px-7">
+    <ItemPair
+      title="Allstate Extended Vehicle Care"
+      subtitle="For as little as $19/mo, we'll pay for repairs after your manufacturer's warranty expires."
+      titleClass="text-teal text-lg font-medium"
+      subtitleClass="text-white text-xs"
+    />
+  </div>
+  <div>
+    <for|text| of=texts>
+      <div class="flex flex-row py-4 px-7 pl-1">
+        <img key=text.id src=text.logo class="w-8" alt="Random Logo">
+        <ItemPair class="ml-2" title=text.title titleClass="font-medium" subtitle=text.subtitle/>
+      </div>
+    </for>
+  </div>
+</div>

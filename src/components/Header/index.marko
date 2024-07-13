@@ -1,0 +1,28 @@
+import allstateLogo from "../../assets/images/allstateLogo.svg";
+
+<header class="bg-darkblue px-10 py-6 flex">
+    <div>
+      <img src=allstateLogo class="w-28 min-w-14 mt-2" alt="Allstate Logo">
+    </div>
+
+    <div class="ml-8 flex flex-col align-left">
+      <span id="time" class="text-teal">
+        <output>${state.output}</output>
+      </span>
+      <span class="text-white">
+        ${state.diff}
+      </span>
+
+      <span class="text-white mt-4">
+        Allstate Extended Vehicle Care
+      </span>
+      <div class="text-4xl mt-4">
+        <span class="text-white">
+          Protection that
+          <span class="text-teal">
+            extends beyond your warranty
+          </span>
+        </span>
+      </div>
+    </div>
+</header>
